@@ -1,15 +1,42 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #333;
-    padding: 20px;
-    background-color: #f9f9f9;
+html, body {
+  height: 100%;
 }
 
-#results img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    vertical-align: middle;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #212529;
+  background-color: #f0f1f2; /* light grey background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* let main fill available vertical space */
+}
+
+/* Navbar theme: navy */
+.navbar-navy {
+  background-color: navy; /* #000080 */
+}
+.navbar-navy .navbar-brand,
+.navbar-navy .nav-link,
+.navbar-navy .navbar-text {
+  color: #fff;
+}
+
+/* Make navbar ~25% taller */
+.navbar-25 {
+  padding-top: 0.625rem;  /* 0.5rem * 1.25 */
+  padding-bottom: 0.625rem;
+}
+.navbar-25 .navbar-brand {
+  font-size: calc(1.25rem * 1.25);
+}
+
+/* Card image consistency */
+.card-img-top {
+  height: 160px;
+  object-fit: cover;
 }
